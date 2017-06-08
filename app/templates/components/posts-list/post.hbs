@@ -1,0 +1,9 @@
+<h1>
+  {{inline-input value=post.title placeholder="Set title"}}
+  <button {{action "removePost" post}}> Delete post</button>
+</h1>
+
+{{inline-input value=post.body placeholder="post body"}}
+Likes: {{post.likes}}
+<button {{action 'addPoints' post}}>Add points</button>
+<button {{action 'removePoints' post}}> Remove points</button>
